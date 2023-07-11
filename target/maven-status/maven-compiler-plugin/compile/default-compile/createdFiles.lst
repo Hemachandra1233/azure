@@ -1,0 +1,4 @@
+com\example\k8s\springbootk8smysql\repository\UserRepository.class
+com\example\k8s\springbootk8smysql\SpringbootK8sMysqlApplication.class
+com\example\k8s\springbootk8smysql\controller\UserController.class
+com\example\k8s\springbootk8smysql\entity\User.class
