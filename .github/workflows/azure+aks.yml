@@ -1,0 +1,16 @@
+name: AzureLoginSample
+
+on: [push]
+
+jobs:
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        environment: 'AzureStack'
+
+    - run: |
+        az webapp list --query "[?state=='Running']"
